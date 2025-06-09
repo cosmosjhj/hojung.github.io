@@ -263,7 +263,8 @@ date_format: "%B %-d, %Y"
 timezone: "America/Toronto"
 markdown: kramdown        # Jekyll’s default
 kramdown:
-  math_engine: katex      # tell kramdown to emit KaTeX markup
+  input: GFM             # GitHub-flavoured Markdown
+  math_engine: katex     # emit KaTeX markup during build
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
