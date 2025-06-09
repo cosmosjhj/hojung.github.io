@@ -1,13 +1,11 @@
 ---
 layout: post
-title: Sample blog post to learn markdown tips
-subtitle: There's lots to learn!
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
+title: Paper 2
+subtitle: 'FreeCG: Free the Design Space of Clebsch-Gordan Transform for Machine Learning Force Fields'
 tags: [test]
 comments: true
 mathjax: true
-author: Bill Smith
+author: Hojung Jung
 ---
 
 {: .box-success}
