@@ -1,16 +1,17 @@
-<!-- KaTeX -->
+<!-- === KaTeX (auto-render) ==================================== -->
 <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.css">
+
 <script defer
         src="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.js"></script>
 
-<!-- Auto-render with full macro access -->
 <script defer
         src="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/contrib/auto-render.min.js"
         onload="renderMathInElement(document.body,{
           delimiters:[
-            {left:'$$',right:'$$',display:true},
-            {left:'$', right:'$', display:false}
+            {left:'$$', right:'$$', display:true},
+            {left:'$',  right:'$',  display:false}
           ],
-          trust:true       /* allow \operatorname, \boldsymbol, … */
+          trust:true                      /* matches your _config.yml */
         });"></script>
+<!-- ============================================================ -->
