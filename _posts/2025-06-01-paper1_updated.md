@@ -20,9 +20,7 @@ In this section, i will introduce what is Density-Functional Theory (DFT) and it
 
 In quantum mechanics, properties of molecules are determined by wave function of the electrons, which is defined by Schrodinger equation given by the following equations.
 
-$$
-H\Psi=E\Psi.
-$$
+$H\Psi=E\Psi.$
 
 By identyfing the ground state energies of the wave function by solving eigenvalue equations, one could. However, this could be highly non-linear when the number of atoms increases (i.e, in many-body scenario) becoming analytically hard to solve. 
 
@@ -30,9 +28,7 @@ To mitigate this issue, physicists and chemists often rely on Density-Functional
 $3N$-dimensional many-electron wave-function $\Psi(\mathbf r_1,\dots,\mathbf r_N)$
 with the **electron density**:
 
-$$
-\rho(\mathbf r)=\sum_{i\in\text{occ}}|\psi_i(\mathbf r)|^2,
-$$
+$\rho(\mathbf r)=\sum_{i\in\text{occ}}|\psi_i(\mathbf r)|^2,$
 
 a function that depends on only **three spatial variables**.
   
