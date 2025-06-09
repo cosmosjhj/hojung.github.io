@@ -20,7 +20,9 @@ In this section, i will introduce what is Density-Functional Theory (DFT) and it
 
 In quantum mechanics, properties of molecules are determined by wave function of the electrons, which is defined by Schrodinger equation given by the following equations.
 
-$H\Psi=E\Psi.$
+$$
+\hat H\Psi = E\Psi
+$$
 
 By identyfing the ground state energies of the wave function by solving eigenvalue equations, one could. However, this could be highly non-linear when the number of atoms increases (i.e, in many-body scenario) becoming analytically hard to solve. 
 
@@ -28,7 +30,9 @@ To mitigate this issue, physicists and chemists often rely on Density-Functional
 $3N$-dimensional many-electron wave-function $\Psi(\mathbf r_1,\dots,\mathbf r_N)$
 with the **electron density**:
 
-$\rho(\mathbf r)=\sum_{i\in\text{occ}}|\psi_i(\mathbf r)|^2,$
+$\displaystyle
+\rho(\mathbf r)=\sum_{i\in\text{occ}} |\psi_i(\mathbf r)|^{2}.
+$
 
 a function that depends on only **three spatial variables**.
   
@@ -39,7 +43,10 @@ a function that depends on only **three spatial variables**.
   set of one-electron equations
 
 $$
-\mathbf{H[\rho]}\mathbf{C} = \mathbf{S}\mathbf{C}\epsilon,
+\mathbf H[\rho]\,\mathbf C
+  = \mathbf S\,\mathbf C\,\boldsymbol{\epsilon},
+\qquad
+\boldsymbol{\epsilon}=\operatorname{diag}(\epsilon_i).
 $$
   
   where the effective Hamiltonian
@@ -71,9 +78,9 @@ $$
 The above equation is self-consistent in a sense that Hamiltonian $H$ dependes on the coefficient matrix $C$ itself. Thus one resort to numerical methods including Self-Consistent-Field (SCF) method for approximating the above eigenvalue problem. SCF method solves above euqation by iteratively updating the Hamiltonian and the coefficient matrix by the following euqation:
 
 $$
-\mathbf{H}^{(k)}(\mathbf{C}^{(k-1)})\,
-\mathbf{C}^{(k)}=
-\mathbf{S}\,\mathbf{C}^{(k)}\,{\epsilon}^{(k)}.
+\mathbf H^{(k)}\bigl(\mathbf C^{(k-1)}\bigr)\,
+\mathbf C^{(k)}
+  = \mathbf S\,\mathbf C^{(k)}\,\boldsymbol{\epsilon}^{(k)}.
 $$
 
 The practical bottleneck is solving the *self-consistent-field* (SCF) cycle that
@@ -131,7 +138,13 @@ shows ill-conditioned $\mathbf S$ and large $B$ amplify small entry-wise errors.
   $\tilde{\mathbf{H}}=(\mathbf{C^{\star}})^{\top}\hat{\mathbf{H}}\mathbf{C^{\star}}$.
 
 * **Align key eigenvalues**   
-  $\mathcal{L}_{\text{WA}}$
+  $$
+\mathcal{L}_{\text{WA}}
+=\rho\sum_{j\in\text{occ}\cup\{\text{LUMO}\}}
+ |\tilde H_{jj}-\epsilon^{\star}_j|^{2}
++\xi\sum_{j\notin\text{occ}\cup\{\text{LUMO}\}}
+ |\tilde H_{jj}-\epsilon^{\star}_j|^{2},\quad \rho\gg\xi.
+$$
 
 No back-prop through an eigensolver → stable training.
 
