@@ -1,14 +1,12 @@
 ---
 layout: post
 title: Paper 1
-subtitle: 'ENHANCING THE SCALABILITY AND APPLICABILITY
-OF KOHN-SHAM HAMILTONIANS FOR MOLECULAR
-SYSTEMS'
+subtitle: 'ENHANCING THE SCALABILITY AND APPLICABILITY OF KOHN-SHAM HAMILTONIANS FOR MOLECULAR SYSTEMS'
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
 tags: [books, test]
-author: Sharon Smith and Barry Simpson
+author: Hojung Jung
 ---
 
 1. Density Functional Theory (DFT) and its preliminaries
