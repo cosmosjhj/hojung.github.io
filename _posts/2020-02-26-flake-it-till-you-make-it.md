@@ -9,10 +9,15 @@ tags: [books, test]
 author: Hojung Jung
 ---
 
-1. Density Functional Theory (DFT) and its preliminaries
+{: .box-success}
+One line summary : This paper enhances DFT calculation by proposing novel architecture with refined loss that considers eigenvalues of the Kohn-Sham equations.
 
-2. Method: Wave function alignment loss / Wavenet
+**1. Density Functional Theory (DFT) and its preliminaries**
 
-3. Experiments
+**2. Method: Wave function alignment loss / Wavenet**
 
-4. Conclusion
+**3. Experiments**
+
+**4. Discussion with personal viewpoint**
+
+**5. Conclusion**
